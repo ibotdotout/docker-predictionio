@@ -1,3 +1,11 @@
+# Update by [@ibotdotout](http://github.com/ibotdotout)
+
+[![](https://badge.imagelayers.io/ibotdotout/docker-predictionio:latest.svg)](https://imagelayers.io/?images=ibotdotout/docker-predictionio:latest
+'Get your own badge on imagelayers.io')
+
+* Update to Prediction.io version 0.9.5
+* Reduce Image Size from 2Gb to 1.3 Gb
+
 # PredictionIO docker container
 Docker container for PredictionIO-based machine learning services
 
