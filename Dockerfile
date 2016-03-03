@@ -12,7 +12,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --auto-remove curl openjdk-7-jdk libgfortran3 python-pip \
-    && pip install predictionio
+    && pip install predictionio \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
