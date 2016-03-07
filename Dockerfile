@@ -10,7 +10,10 @@ ENV PIO_HOME /PredictionIO-${PIO_VERSION}
 ENV PATH=${PIO_HOME}/bin:$PATH
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
-RUN apt-get update \
+RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse" > /etc/apt/sources.list \
+    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list \
+    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse" >> /etc/apt/sources.list \
+    && apt-get update \
     && apt-get install -y --no-install-recommends --auto-remove curl openjdk-7-jdk libgfortran3 python-pip \
     && pip install predictionio \
     && apt-get clean \
