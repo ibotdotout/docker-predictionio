@@ -3,13 +3,14 @@
 [![](https://badge.imagelayers.io/ibotdotout/docker-predictionio:latest.svg)](https://imagelayers.io/?images=ibotdotout/docker-predictionio:latest
 'Get your own badge on imagelayers.io')
 
-* Update to Prediction.io version 0.9.5
+* Update to Prediction.io version 0.10.0 [steveny2k/docker-predictionio](https://github.com/steveny2k/docker-predictionio)
 * Reduce Image Size from 2Gb to 1.3 Gb
 
 # PredictionIO docker container
 Docker container for PredictionIO-based machine learning services
 
 [![Docker build](http://dockeri.co/image/sphereio/predictionio)](https://registry.hub.docker.com/u/sphereio/predictionio/)
+
 
 [PredictionIO](https://prediction.io) is an open-source Machine Learning
 server for developers and data scientists to build and deploy predictive
