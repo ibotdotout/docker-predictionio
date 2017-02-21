@@ -4,7 +4,7 @@
 'Get your own badge on imagelayers.io')
 
 * Update to Prediction.io version 0.10.0 [steveny2k/docker-predictionio](https://github.com/steveny2k/docker-predictionio)
-* Reduce Image Size from 2Gb to 1.3 Gb
+* Reduce Image Size from 2.4Gb to 1.7 Gb
 
 # PredictionIO docker container
 Docker container for PredictionIO-based machine learning services
