@@ -10,10 +10,7 @@ ENV PIO_HOME /PredictionIO-${PIO_VERSION}-incubating
 ENV PATH=${PIO_HOME}/bin:$PATH
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
-RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt  xenial main restricted universe multiverse" > /etc/apt/sources.list \
-    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt  xenial-updates main restricted universe multiverse" >> /etc/apt/sources.list \
-    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt  xenial-security main restricted universe multiverse" >> /etc/apt/sources.list \
-    && apt-get update \
+RUN apt-get update \
     && apt-get install -y --no-install-recommends --auto-remove curl openjdk-8-jdk libgfortran3 python-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
